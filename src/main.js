@@ -4,7 +4,7 @@ import router from './router'
 import Vuetify from 'vuetify'
 import store from './store'
 import 'vuetify/dist/vuetify.min.css'
-import * as fb from 'firebase/index'
+import * as fb from 'firebase'
 
 Vue.use(Vuetify)
 
@@ -19,6 +19,7 @@ new Vue({
   template: '<App/>',
   created () {
     fb.initializeApp({
+
     })
   }
 })

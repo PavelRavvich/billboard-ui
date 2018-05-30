@@ -21,5 +21,11 @@ new Vue({
     fb.initializeApp({
 
     })
+
+    fb.auth().onAuthStateChanged(user => {
+      if (user) {
+        this.$store.dispatch('autoLoginUser', user)
+      }
+    })
   }
 })

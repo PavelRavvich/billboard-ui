@@ -58,9 +58,10 @@
           <v-flex sx12>
             <v-spacer></v-spacer>
             <v-btn
+              :loading="loading"
+              :disabled="!valid || loading"
               class="success"
               @click="createAd"
-              :disabled="!valid"
             >Create Ad</v-btn>
           </v-flex>
         </v-layout>
@@ -80,6 +81,11 @@
         valid: false
       }
     },
+    computed: {
+      loading () {
+        return this.$store.getters.loading
+      }
+    },
     methods: {
       createAd () {
         if (this.$refs.form.validate()) {
@@ -90,6 +96,10 @@
             imageSrc: 'https://i.ebayimg.com/images/g/PbkAAOxyzTJTjU6j/s-l300.jpg'
           }
           this.$store.dispatch('createAd', ad)
+            .then(() => {
+              this.$router.push('/list')
+            })
+            .catch(() => {})
         }
       }
     }

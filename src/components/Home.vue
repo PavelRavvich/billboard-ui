@@ -1,6 +1,4 @@
 <template>
-
-
   <div v-if="!loading">
     <v-container fluid>
       <v-layout row>
@@ -47,7 +45,7 @@
 
               </v-spacer>
               <v-btn flat :to="'/ad/' + ad.id">Open</v-btn>
-              <v-btn raised class="primary">Bue</v-btn>
+              <app-buy-model :ad="ad"></app-buy-model>
             </v-card-actions>
           </v-card>
 

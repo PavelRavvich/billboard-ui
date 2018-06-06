@@ -7,6 +7,16 @@
 
         <v-layout row>
           <v-flex xs12>
+            <v-card-title>
+              <h1 class="text--primary">Edit Ad</h1>
+            </v-card-title>
+          </v-flex>
+        </v-layout>
+
+        <v-divider></v-divider>
+
+        <v-layout row>
+          <v-flex xs12>
             <v-card-text>
 
               <v-text-field

@@ -1,8 +1,8 @@
-# billboard
+# Billboard [![License](https://camo.githubusercontent.com/9a140a4c68e7c178bc660bee7675f4f25ff7ade3/68747470733a2f2f696d672e736869656c64732e696f2f6e706d2f6c2f7675652e737667)](https://github.com/triodjangopiter/billboard/blob/master/LICENSE)
 
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://github.com/triodjangopiter/billboard/blob/master/LICENSE)
+This example of using Vue framework)
 
-> A Vue.js project.
+> A Vue.js project. 
 > Billboard service base on View JS and Vuetify.
 
 ## Build Setup

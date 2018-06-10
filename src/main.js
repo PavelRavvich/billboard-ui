@@ -20,6 +20,7 @@ new Vue({
   template: '<App/>',
   created () {
     fb.initializeApp({
+
     })
 
     fb.auth().onAuthStateChanged(user => {
